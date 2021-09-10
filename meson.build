@@ -6,7 +6,7 @@ project('VFRToCFR',
 
 
 # Dependencies
-vapoursynth = dependency('vapoursynth')
+#vapoursynth = dependency('vapoursynth')
 
 
 # Sources
@@ -18,7 +18,7 @@ src = [
 library(
     'vfrtocfr',
     src,
-    dependencies : [vapoursynth],
+    #dependencies : [vapoursynth],
     install_dir : join_paths(get_option('prefix'), get_option('libdir'), 'vapoursynth'),
     install : true
 )
